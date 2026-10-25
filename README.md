@@ -21,14 +21,6 @@ saibhavadeesh.github.io/
 │   ├── terms.html               # Terms & Conditions
 │   └── terms-and-conditions.html# Redirect alias
 │
-├── foody_cookbook/              # Foody Cookbook App
-│   ├── privacy.html
-│   └── terms.html
-│
-├── haiti_bel_air/               # Haiti Bel Air Platform
-│   ├── privacy.html
-│   └── terms.html
-│
 └── nivid/                       # Nivid Core Services
     ├── privacy.html
     └── terms.html
