@@ -1,189 +1,540 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Bhavadeesh | Nivid - Apps &amp; Legal Center</title>
-  <meta name="description" content="Personal portfolio and software directory of Sai Bhavadeesh & Nivid products, including Cable TV Book, Foody Cookbook, and legal policies.">
+  <title>Sai Bhavadeesh Yarlagadda | AI Software Engineer &amp; Product Creator</title>
+  <meta name="description" content="Portfolio of Sai Bhavadeesh Yarlagadda, AI Software Engineer specializing in Agentic AI, RAG, Multi-Agent Systems, and MLOps. Founder of Nivid & Creator of Cable TV Book.">
   <link rel="canonical" href="https://saibhavadeesh.github.io/">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     body { font-family: 'Inter', sans-serif; }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col selection:bg-indigo-500 selection:text-white">
 
-  <!-- Header -->
-  <header class="bg-white/90 backdrop-blur-md border-b border-slate-200 sticky top-0 z-30">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
-      <div class="flex items-center space-x-3">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 to-blue-500 flex items-center justify-center text-white font-extrabold text-lg shadow-sm">
-          N
+  <!-- Top Navigation Bar -->
+  <header class="bg-white/90 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-3.5 flex items-center justify-between">
+      
+      <!-- Brand / Monogram -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-700 to-blue-600 flex items-center justify-center text-white font-black text-lg shadow-sm group-hover:scale-105 transition-transform">
+          SB
         </div>
         <div>
-          <span class="text-base font-bold text-slate-900 block leading-tight">Nivid</span>
-          <span class="text-xs text-slate-500 font-medium">By Sai Bhavadeesh</span>
+          <span class="text-base font-bold text-slate-900 block leading-tight tracking-tight">Sai Bhavadeesh</span>
+          <span class="text-xs text-slate-500 font-medium">AI Software Engineer</span>
         </div>
-      </div>
-      <nav class="flex items-center space-x-4 text-sm font-medium">
-        <a href="#apps" class="text-slate-600 hover:text-indigo-600 transition-colors">Products</a>
-        <a href="#legal" class="text-slate-600 hover:text-indigo-600 transition-colors">Policies</a>
-        <a href="mailto:saibhavadeesh@gmail.com" class="px-3 py-1.5 rounded-lg bg-indigo-50 text-indigo-700 hover:bg-indigo-100 font-medium transition-colors">Contact</a>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-600">
+        <a href="#about" class="hover:text-indigo-600 transition-colors">About</a>
+        <a href="#experience" class="hover:text-indigo-600 transition-colors">Experience</a>
+        <a href="#skills" class="hover:text-indigo-600 transition-colors">Skills</a>
+        <a href="#products" class="hover:text-indigo-600 transition-colors">Products</a>
+        <a href="#education" class="hover:text-indigo-600 transition-colors">Education</a>
+        <a href="#policies" class="hover:text-indigo-600 transition-colors">Legal &amp; Policies</a>
       </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center space-x-2.5">
+        <a href="assets/Sai_Bhavadeesh_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center px-3.5 py-1.5 rounded-lg border border-slate-300 hover:border-slate-400 bg-white text-slate-700 text-xs font-semibold shadow-sm transition-all hover:bg-slate-50">
+          <svg class="w-3.5 h-3.5 mr-1.5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Resume
+        </a>
+        <a href="mailto:saibhavadeesh@gmail.com" class="inline-flex items-center px-3.5 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold shadow-sm hover:shadow transition-all">
+          Contact Me
+        </a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="bg-gradient-to-b from-white to-slate-50 border-b border-slate-200 py-16 sm:py-24">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-semibold uppercase tracking-wider mb-6">
-        <span>Software Engineer &amp; Product Creator</span>
+  <section id="about" class="relative overflow-hidden bg-gradient-to-b from-white via-slate-50/50 to-slate-100/60 border-b border-slate-200 py-16 sm:py-24">
+    <!-- Background Glow Accent -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-gradient-to-tr from-indigo-100/40 via-blue-100/30 to-purple-100/40 blur-3xl pointer-events-none -z-10"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <!-- Status Badge -->
+      <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-800 text-xs font-semibold tracking-wide mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>AI Software Engineer &bull; Netcore Unbxd &bull; Bangalore, India</span>
       </div>
+
+      <!-- Main Heading -->
       <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight">
-        Sai Bhavadeesh
+        Sai Bhavadeesh <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-600">Yarlagadda</span>
       </h1>
-      <p class="mt-4 text-lg sm:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
-        Building purposeful, offline-first mobile applications and cloud-powered tools under the <strong>Nivid</strong> brand.
+      
+      <p class="mt-4 text-xl sm:text-2xl font-medium text-slate-700 max-w-3xl leading-snug">
+        Specializing in Agentic AI, RAG, Search Intelligence, Multi-Agent Systems &amp; Production MLOps.
       </p>
 
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <!-- Bio / Summary -->
+      <p class="mt-4 text-base sm:text-lg text-slate-600 max-w-3xl leading-relaxed">
+        With <strong>4+ years of engineering experience</strong>, I design and deploy scalable AI architectures and strategic intelligence initiatives—from conversational shopping assistants and automated relevance evaluation platforms to robust cloud backend systems and offline-ready mobile platforms.
+      </p>
+
+      <!-- Action & Social Links -->
+      <div class="mt-8 flex flex-wrap items-center gap-3">
+        <a href="https://in.linkedin.com/in/sai-bhavadeesh-yarlagadda-58200917b" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-medium text-sm shadow-sm transition-all">
+          <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          LinkedIn Profile
+        </a>
+
         <a href="https://github.com/SaiBhavadeesh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-medium text-sm shadow-sm transition-all">
           <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-          GitHub Profile
+          GitHub
         </a>
-        <a href="mailto:saibhavadeesh@gmail.com" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm border border-slate-300 shadow-sm transition-all">
-          <svg class="w-4 h-4 mr-2 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          Get in Touch
+
+        <a href="assets/Sai_Bhavadeesh_Resume.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-white hover:bg-slate-50 text-slate-700 font-medium text-sm border border-slate-300 shadow-sm transition-all">
+          <svg class="w-4 h-4 mr-2 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          Download Resume (PDF)
+        </a>
+
+        <a href="mailto:saibhavadeesh@gmail.com" class="inline-flex items-center px-4 py-2.5 rounded-xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-medium text-sm border border-indigo-200 transition-all">
+          <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          saibhavadeesh@gmail.com
         </a>
       </div>
+
+      <!-- Quick Metrics Bar -->
+      <div class="mt-12 grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-200/80">
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">4+ Years</div>
+          <div class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">Engineering Experience</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-indigo-600">95%</div>
+          <div class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">Evaluation Cost Reduction</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-slate-900">Agentic AI</div>
+          <div class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">RAG &amp; Multi-Agent Systems</div>
+        </div>
+        <div>
+          <div class="text-2xl sm:text-3xl font-extrabold text-emerald-600">9.01</div>
+          <div class="text-xs sm:text-sm text-slate-500 font-medium mt-0.5">B.Tech CGPA (IIIT Kottayam)</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Applications & Product Suite -->
-  <main id="apps" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 flex-grow">
-    
-    <div class="mb-10 flex flex-col sm:flex-row sm:items-end sm:justify-between">
-      <div>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">Products &amp; Applications</h2>
-        <p class="text-slate-500 text-sm mt-1">Explore applications and their official privacy &amp; service policies.</p>
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-16 sm:py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="mb-12">
+        <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase">Career Timeline</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">Professional Experience</h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">Designing strategic AI initiatives and production systems at scale.</p>
       </div>
-      <div class="mt-4 sm:mt-0">
-        <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-indigo-50 text-indigo-700 border border-indigo-100">
-          Independent App Policies
-        </span>
-      </div>
-    </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
+      <div class="space-y-10">
 
-      <!-- Card 1: Cable TV Book -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xl shadow-sm">
-              📺
+        <!-- Experience 1: Netcore Unbxd -->
+        <div class="relative pl-6 sm:pl-8 border-l-2 border-indigo-600 space-y-4">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-indigo-600 ring-4 ring-indigo-50"></div>
+          
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">AI Software Engineer</h3>
+              <div class="text-sm font-semibold text-indigo-600">Netcore Unbxd &bull; Bangalore, Karnataka</div>
             </div>
-            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-100">
-              Active Production
-            </span>
-          </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-1">Cable TV Book</h3>
-          <p class="text-xs text-indigo-600 font-semibold mb-3">by Nivid</p>
-          <p class="text-sm text-slate-600 leading-relaxed mb-6">
-            Comprehensive business management and billing collection app built for local cable TV and broadband network operators. Features offline ledger management, street/area groupings, and instant cloud sync.
-          </p>
-        </div>
-
-        <div class="pt-4 border-t border-slate-100 space-y-2">
-          <div class="flex items-center justify-between">
-            <a href="cabletvbook/index.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 inline-flex items-center">
-              Product Overview &rarr;
-            </a>
-          </div>
-          <div class="flex items-center space-x-3 text-xs text-slate-500 pt-1">
-            <span class="font-medium text-slate-700">Legal:</span>
-            <a href="cabletvbook/privacy.html" class="text-indigo-600 hover:underline">Privacy Policy</a>
-            <span>&bull;</span>
-            <a href="cabletvbook/terms.html" class="text-indigo-600 hover:underline">Terms &amp; Conditions</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2: Nivid Core Suite -->
-      <div class="bg-white rounded-2xl border border-slate-200 p-6 sm:p-7 shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
-        <div>
-          <div class="flex items-center justify-between mb-4">
-            <div class="w-12 h-12 rounded-xl bg-slate-800 text-white flex items-center justify-center font-bold text-xl shadow-sm">
-              ⚙️
+            <div class="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full w-fit">
+              September 2025 &ndash; Present
             </div>
-            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-50 text-blue-700 border border-blue-100">
-              Core Systems
-            </span>
           </div>
-          <h3 class="text-xl font-bold text-slate-900 mb-1">Nivid Core</h3>
-          <p class="text-xs text-indigo-600 font-semibold mb-3">Software Services</p>
-          <p class="text-sm text-slate-600 leading-relaxed mb-6">
-            Cloud infrastructure and shared account management services providing authentication, backup, and enterprise backend solutions across the Nivid app family.
+
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+            Tech: Agentic AI &bull; Python &bull; Go &bull; FastAPI &bull; MLOps &bull; Docker &bull; Kubernetes &bull; Redis &bull; Celery
           </p>
+
+          <ul class="text-sm text-slate-600 space-y-2.5 list-disc list-outside ml-4 leading-relaxed">
+            <li><strong>AI-Powered Shopping Assistant:</strong> Owned end-to-end development of conversational product discovery and information retrieval leveraging <strong>Retrieval-Augmented Generation (RAG)</strong> and multi-agent workflows.</li>
+            <li><strong>Multi-Modal Capabilities:</strong> Enhanced assistant with Visual Search, Product Comparison, Summarization, Search Insights, Document Understanding, and AI-powered Planning Tables.</li>
+            <li><strong>Enterprise Guardrails:</strong> Designed and deployed configurable AI guardrails and site-specific response controls across high-volume e-commerce storefronts.</li>
+            <li><strong>Drishti Platform:</strong> Architected and built <em>Drishti</em>, an internal relevance management platform using Django, Celery, and Redis, automating search relevance setup and evaluation workflows.</li>
+            <li><strong>95% Cost Optimization:</strong> Slashed AI-powered search relevance evaluation costs by <strong>95%</strong> through token optimization, intelligent model routing, and Gemini Batch Processing.</li>
+            <li><strong>Recommendation ML Pipelines:</strong> Maintained and enhanced production pipelines including Top Sellers and Query Category Prediction with store-level training.</li>
+            <li><strong>Complete the Look (CTL):</strong> Automated CTL workflows from manual procedures into an automated API-driven ML pipeline.</li>
+            <li><strong>Strategic Showcase:</strong> Spearheaded high-impact initiatives including the Nike Customized Sneakers experience and an agent-driven AI Mode for e-commerce search.</li>
+          </ul>
         </div>
 
-        <div class="pt-4 border-t border-slate-100 space-y-2">
-          <div class="flex items-center space-x-3 text-xs text-slate-500 pt-1">
-            <span class="font-medium text-slate-700">Legal:</span>
-            <a href="nivid/privacy.html" class="text-indigo-600 hover:underline">Privacy Policy</a>
-            <span>&bull;</span>
-            <a href="nivid/terms.html" class="text-indigo-600 hover:underline">Terms &amp; Conditions</a>
+        <!-- Experience 2: TCS -->
+        <div class="relative pl-6 sm:pl-8 border-l-2 border-slate-300 space-y-4">
+          <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-slate-400 ring-4 ring-slate-100"></div>
+
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+            <div>
+              <h3 class="text-xl font-bold text-slate-900">Software Engineer</h3>
+              <div class="text-sm font-semibold text-slate-700">Tata Consultancy Services &bull; Bangalore, Karnataka</div>
+            </div>
+            <div class="text-xs font-medium text-slate-500 bg-slate-100 px-3 py-1 rounded-full w-fit">
+              July 2022 &ndash; September 2025
+            </div>
+          </div>
+
+          <p class="text-xs font-semibold text-slate-500 uppercase tracking-wider">
+            Tech: Python &bull; MLOps &bull; Apache Airflow &bull; Flask &bull; PostgreSQL &bull; Docker &bull; Kubernetes &bull; Spring Boot
+          </p>
+
+          <ul class="text-sm text-slate-600 space-y-2.5 list-disc list-outside ml-4 leading-relaxed">
+            <li><strong>End-to-End ML Pipelines:</strong> Designed and deployed automated pipelines covering ingestion, validation, transformation, training, and model evaluation with Python and Apache Airflow.</li>
+            <li><strong>Scalable MLOps:</strong> Built automated training and deployment workflows with Flask, PostgreSQL, DVC, Docker, Kubernetes, and GitLab CI/CD.</li>
+            <li><strong>Adaptive Inference:</strong> Implemented Multi-Armed Bandit (LinUCB) algorithms for dynamic model selection and real-time prediction optimization.</li>
+            <li><strong>Heterogeneous Network Simulation:</strong> Engineered a simulation platform integrating Mininet, Mininet-WiFi, and NS-3 (4G/5G) simulators on Kubernetes clusters.</li>
+            <li><strong>Enterprise Applications:</strong> Contributed to backend microservices built with Spring Boot and Angular in Agile teams.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Technical Skills Matrix -->
+  <section id="skills" class="py-16 sm:py-20 border-b border-slate-200 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="mb-12">
+        <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase">Capabilities</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">Technical Skills &amp; Stack</h2>
+        <p class="text-slate-500 text-sm sm:text-base mt-2">Core toolkits, frameworks, and architectural principles.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Category 1 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center font-bold text-lg mb-4">
+            🤖
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">AI &amp; Agentic Systems</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Agentic AI</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">RAG Systems</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Multi-Agent Systems</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">OpenAI Agents SDK</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Google GenAI</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Prompt Engineering</span>
           </div>
         </div>
+
+        <!-- Category 2 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-lg mb-4">
+            💻
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">Languages</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Python</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Go</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Java</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">TypeScript</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Dart</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">SQL</span>
+          </div>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-lg mb-4">
+            ⚙️
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">Backend &amp; Frameworks</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">FastAPI</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Django</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Celery</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Spring Boot</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Flask</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">REST APIs</span>
+          </div>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-lg mb-4">
+            ☁️
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">Cloud &amp; DevOps</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">AWS</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Google Cloud (GCP)</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Docker</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Kubernetes</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Helm</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">GitHub Actions</span>
+          </div>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-lg mb-4">
+            🗄️
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">Databases &amp; MLOps</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">PostgreSQL</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">MongoDB</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Redis</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Cloud Firestore</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Apache Airflow</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">DVC</span>
+          </div>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center font-bold text-lg mb-4">
+            📱
+          </div>
+          <h3 class="font-bold text-slate-900 mb-2">Mobile &amp; Architecture</h3>
+          <div class="flex flex-wrap gap-1.5 text-xs">
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Flutter</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">React Native</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Microservices</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Distributed Systems</span>
+            <span class="px-2.5 py-1 bg-slate-100 rounded-lg text-slate-700 font-medium">Agile / Scrum</span>
+          </div>
+        </div>
+
       </div>
 
     </div>
+  </section>
 
-    <!-- Centralized Policies Directory -->
-    <div id="legal" class="mt-16 bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
-      <h3 class="text-xl font-bold text-slate-900 mb-2">Centralized App Legal &amp; Policy Registry</h3>
-      <p class="text-sm text-slate-600 mb-6">
-        Every app published under Nivid maintains its own dedicated, publicly verifiable privacy policy and terms of service compliant with Google Play Store and Apple App Store review standards:
-      </p>
-
-      <div class="overflow-x-auto">
-        <table class="w-full text-left text-sm">
-          <thead>
-            <tr class="border-b border-slate-200 text-slate-500 text-xs uppercase tracking-wider">
-              <th class="py-3 px-3 font-semibold">Application</th>
-              <th class="py-3 px-3 font-semibold">Category</th>
-              <th class="py-3 px-3 font-semibold">Privacy Policy</th>
-              <th class="py-3 px-3 font-semibold">Terms &amp; Conditions</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y divide-slate-100 text-slate-700">
-            <tr>
-              <td class="py-3 px-3 font-medium text-slate-900">Cable TV Book</td>
-              <td class="py-3 px-3 text-slate-500">Business / Utilities</td>
-              <td class="py-3 px-3"><a href="cabletvbook/privacy.html" class="text-indigo-600 hover:underline font-medium">/cabletvbook/privacy.html</a></td>
-              <td class="py-3 px-3"><a href="cabletvbook/terms.html" class="text-indigo-600 hover:underline font-medium">/cabletvbook/terms.html</a></td>
-            </tr>
-            <tr>
-              <td class="py-3 px-3 font-medium text-slate-900">Nivid Services</td>
-              <td class="py-3 px-3 text-slate-500">Enterprise Cloud</td>
-              <td class="py-3 px-3"><a href="nivid/privacy.html" class="text-indigo-600 hover:underline font-medium">/nivid/privacy.html</a></td>
-              <td class="py-3 px-3"><a href="nivid/terms.html" class="text-indigo-600 hover:underline font-medium">/nivid/terms.html</a></td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- Featured Products & Venture (Nivid) -->
+  <section id="products" class="py-16 sm:py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="mb-12 flex flex-col sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase">Products &amp; Ventures</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">Nivid Applications</h2>
+          <p class="text-slate-500 text-sm sm:text-base mt-2">Independent software ventures built for real-world enterprise operations.</p>
+        </div>
+        <div class="mt-4 sm:mt-0">
+          <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200">
+            Active Deployments
+          </span>
+        </div>
       </div>
-    </div>
 
-  </main>
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Product 1: Cable TV Book -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold text-xl shadow-sm">
+                📺
+              </div>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800">
+                Live Production
+              </span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-slate-900 mb-1">Cable TV Book</h3>
+            <p class="text-xs text-indigo-600 font-semibold mb-3">by Nivid</p>
+            
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              A business management and subscriber ledger platform engineered specifically for local cable television &amp; broadband operators. Solves the pain of manual paper books with offline ledger recording, area/street partitions, and real-time cloud synchronization.
+            </p>
+            
+            <div class="space-y-1.5 text-xs text-slate-500 mb-6">
+              <div>&bull; Built with: <strong>Flutter, Google Cloud Firestore, Firebase Auth</strong></div>
+              <div>&bull; Offline persistence with instant online reconciliation</div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 space-y-2">
+            <div class="flex items-center justify-between">
+              <a href="cabletvbook/index.html" class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 inline-flex items-center">
+                Explore Cable TV Book &rarr;
+              </a>
+            </div>
+            <div class="flex items-center space-x-3 text-xs text-slate-500 pt-1">
+              <span class="font-medium text-slate-700">Legal:</span>
+              <a href="cabletvbook/privacy.html" class="text-indigo-600 hover:underline">Privacy Policy</a>
+              <span>&bull;</span>
+              <a href="cabletvbook/terms.html" class="text-indigo-600 hover:underline">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Nivid Platform -->
+        <div class="bg-slate-50 rounded-2xl border border-slate-200 p-6 sm:p-8 flex flex-col justify-between hover:shadow-md transition-shadow">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-xl bg-slate-900 text-white flex items-center justify-center font-bold text-xl shadow-sm">
+                ⚙️
+              </div>
+              <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-100 text-blue-800">
+                Cloud Backend
+              </span>
+            </div>
+            
+            <h3 class="text-xl font-bold text-slate-900 mb-1">Nivid Core Services</h3>
+            <p class="text-xs text-indigo-600 font-semibold mb-3">Enterprise Cloud Services</p>
+            
+            <p class="text-sm text-slate-600 leading-relaxed mb-6">
+              Shared cloud backend infrastructure providing unified authentication, automated database backups, multi-tenant isolation, and secure security rules for the Nivid family of products.
+            </p>
+
+            <div class="space-y-1.5 text-xs text-slate-500 mb-6">
+              <div>&bull; Infrastructure: <strong>Google Cloud Platform &amp; Docker</strong></div>
+              <div>&bull; Security: Role-based data access rules &amp; TLS encryption</div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-slate-200 space-y-2">
+            <div class="flex items-center space-x-3 text-xs text-slate-500 pt-1">
+              <span class="font-medium text-slate-700">Legal:</span>
+              <a href="nivid/privacy.html" class="text-indigo-600 hover:underline">Privacy Policy</a>
+              <span>&bull;</span>
+              <a href="nivid/terms.html" class="text-indigo-600 hover:underline">Terms &amp; Conditions</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Education & Academic Research -->
+  <section id="education" class="py-16 sm:py-20 border-b border-slate-200 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="mb-12">
+        <span class="text-xs font-bold text-indigo-600 tracking-wider uppercase">Background</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight mt-1">Education &amp; Research</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Degree -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">Undergraduate Degree</div>
+          <h3 class="text-lg font-bold text-slate-900">B.Tech in Computer Science</h3>
+          <div class="text-sm font-medium text-slate-700 mt-1">Indian Institute of Information Technology (IIIT), Kottayam</div>
+          <div class="flex items-center justify-between text-xs text-slate-500 mt-4 pt-4 border-t border-slate-100">
+            <span>August 2018 &ndash; April 2022</span>
+            <span class="font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">CGPA: 9.01</span>
+          </div>
+        </div>
+
+        <!-- Research Publication -->
+        <div class="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <div class="text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-1">Conference Publication</div>
+          <h3 class="text-lg font-bold text-slate-900">Third Eye: Object Recognition &amp; Speech Generation</h3>
+          <p class="text-xs text-slate-600 mt-2 leading-relaxed">
+            Real-time assistive vision system using a custom-trained YOLOv5 model and speech synthesis to aid visually impaired individuals in interpreting surroundings.
+          </p>
+          <div class="text-xs text-slate-500 mt-4 pt-4 border-t border-slate-100">
+            Presented at the <strong>International Conference on Machine Learning and Data Engineering</strong>.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Legal & App Policy Registry (Google Play / App Store Compliant) -->
+  <section id="policies" class="py-16 sm:py-20 border-b border-slate-200 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      
+      <div class="bg-slate-50 border border-slate-200 rounded-2xl p-6 sm:p-8">
+        <h3 class="text-xl font-bold text-slate-900 mb-2">Public Legal &amp; Compliance Center</h3>
+        <p class="text-sm text-slate-600 mb-6">
+          Official, publicly hosted privacy policies and terms of service compliant with Google Play Developer Policy and Apple App Store review guidelines:
+        </p>
+
+        <div class="overflow-x-auto bg-white rounded-xl border border-slate-200 shadow-sm">
+          <table class="w-full text-left text-sm">
+            <thead>
+              <tr class="border-b border-slate-200 bg-slate-50/50 text-slate-500 text-xs uppercase tracking-wider">
+                <th class="py-3 px-4 font-semibold">Application</th>
+                <th class="py-3 px-4 font-semibold">Category</th>
+                <th class="py-3 px-4 font-semibold">Privacy Policy</th>
+                <th class="py-3 px-4 font-semibold">Terms &amp; Conditions</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-700">
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-slate-900 flex items-center space-x-2">
+                  <span>📺</span>
+                  <span>Cable TV Book</span>
+                </td>
+                <td class="py-3.5 px-4 text-slate-500">Business / Utilities</td>
+                <td class="py-3.5 px-4">
+                  <a href="cabletvbook/privacy.html" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                    /cabletvbook/privacy.html
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </td>
+                <td class="py-3.5 px-4">
+                  <a href="cabletvbook/terms.html" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                    /cabletvbook/terms.html
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td class="py-3.5 px-4 font-medium text-slate-900 flex items-center space-x-2">
+                  <span>⚙️</span>
+                  <span>Nivid Services</span>
+                </td>
+                <td class="py-3.5 px-4 text-slate-500">Cloud Platform</td>
+                <td class="py-3.5 px-4">
+                  <a href="nivid/privacy.html" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                    /nivid/privacy.html
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </td>
+                <td class="py-3.5 px-4">
+                  <a href="nivid/terms.html" class="text-indigo-600 hover:underline font-medium inline-flex items-center">
+                    /nivid/terms.html
+                    <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500">
-    <div class="max-w-5xl mx-auto px-4">
-      <p>&copy; 2026 Nivid. All rights reserved.</p>
-      <p class="mt-1">Developed by Sai Bhavadeesh &bull; Support: <a href="mailto:saibhavadeesh@gmail.com" class="text-indigo-600 hover:underline">saibhavadeesh@gmail.com</a></p>
+  <footer class="bg-white border-t border-slate-200 py-12 text-xs text-slate-500">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <p class="font-semibold text-slate-800">Sai Bhavadeesh Yarlagadda</p>
+        <p class="mt-0.5">Bangalore, Karnataka, India &bull; Contact: <a href="mailto:saibhavadeesh@gmail.com" class="text-indigo-600 hover:underline font-medium">saibhavadeesh@gmail.com</a></p>
+      </div>
+      <div class="flex items-center space-x-4">
+        <a href="https://in.linkedin.com/in/sai-bhavadeesh-yarlagadda-58200917b" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">LinkedIn</a>
+        <span>&bull;</span>
+        <a href="https://github.com/SaiBhavadeesh" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">GitHub</a>
+        <span>&bull;</span>
+        <a href="assets/Sai_Bhavadeesh_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">Resume</a>
+      </div>
+    </div>
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 mt-6 pt-6 border-t border-slate-100 text-center text-slate-400">
+      &copy; 2026 Sai Bhavadeesh Yarlagadda &bull; Nivid. All rights reserved.
     </div>
   </footer>
 
